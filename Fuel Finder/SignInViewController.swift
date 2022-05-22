@@ -21,8 +21,16 @@ class SignInViewController: UIViewController {
     //MARK: Action
     //----------------
     
+    @IBAction func loginButton(_ sender: Any) {
+    }
     
-
+    @IBAction func signUpButton(_ sender: Any) {
+    }
+    
+    @IBAction func forgetPasswordButton(_ sender: Any) {
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
