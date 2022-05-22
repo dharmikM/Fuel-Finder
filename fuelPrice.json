@@ -1,0 +1,17 @@
+[
+    {
+        "name" : "Costo Gas Station",
+        "city" : "Scarborough",
+        "Address" : "xyz",
+        "NormalGas" : 204,
+        "PremiumGas" : 215
+    },
+    {
+        "name" : "ESSO Gas Station",
+        "city" : "Brampton",
+        "Address" : "xyz",
+        "NormalGas" : 115,
+        "PremiumGas" : 180
+    }
+    
+]
