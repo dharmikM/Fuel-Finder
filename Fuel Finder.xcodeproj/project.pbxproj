@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		394B5EF82839D0650047BE91 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394B5EF72839D0650047BE91 /* SignInViewController.swift */; };
 		394C8AC22836E6210021DE77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394C8AC12836E6210021DE77 /* AppDelegate.swift */; };
 		394C8AC42836E6210021DE77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394C8AC32836E6210021DE77 /* SceneDelegate.swift */; };
 		394C8AC62836E6210021DE77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394C8AC52836E6210021DE77 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		394B5EF72839D0650047BE91 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		394C8ABE2836E6210021DE77 /* Fuel Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fuel Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		394C8AC12836E6210021DE77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		394C8AC32836E6210021DE77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				394C8ACF2836E6240021DE77 /* LaunchScreen.storyboard */,
 				394C8AD22836E6240021DE77 /* Info.plist */,
 				394C8ACA2836E6210021DE77 /* Fuel_Finder.xcdatamodeld */,
+				394B5EF72839D0650047BE91 /* SignInViewController.swift */,
 			);
 			path = "Fuel Finder";
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				394C8AC62836E6210021DE77 /* ViewController.swift in Sources */,
 				394C8AC22836E6210021DE77 /* AppDelegate.swift in Sources */,
 				394C8AC42836E6210021DE77 /* SceneDelegate.swift in Sources */,
+				394B5EF82839D0650047BE91 /* SignInViewController.swift in Sources */,
 				394C8ACC2836E6210021DE77 /* Fuel_Finder.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
