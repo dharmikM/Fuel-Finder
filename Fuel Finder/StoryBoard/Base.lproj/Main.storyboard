@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sGq-VO-mcC">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Fuel_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="x7A-1K-NSI">
+                                <rect key="frame" x="100" y="727" width="134" height="45"/>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Get_Started" translatesAutoresizingMaskIntoConstraints="NO" id="2LE-cw-Dr9">
+                                <rect key="frame" x="20" y="187.33333333333337" width="374" height="342"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="342" id="ZiJ-ez-zYh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oV9-kH-Vbo">
+                                <rect key="frame" x="39" y="621.66666666666663" width="324" height="49.333333333333371"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Your One-stop solution to find the cheapest gas prices near you.">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="AvenirNext-DemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tcp-f2-0nC">
+                                <rect key="frame" x="87" y="727" width="250" height="45"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Get Started.">
+                                            <attributes>
+                                                <color key="NSColor" red="0.13725490870000001" green="0.15686275059999999" blue="0.18823529780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="24" name="AvenirNext-DemiBold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="getStartedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nI1-e1-Feo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oV9-kH-Vbo" secondAttribute="trailing" constant="51" id="4MW-dA-Lxp"/>
+                            <constraint firstItem="oV9-kH-Vbo" firstAttribute="top" secondItem="2LE-cw-Dr9" secondAttribute="bottom" constant="92.5" id="7H6-ff-ynh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="x7A-1K-NSI" secondAttribute="bottom" constant="90" id="UfT-du-4Pi"/>
+                            <constraint firstItem="x7A-1K-NSI" firstAttribute="top" secondItem="oV9-kH-Vbo" secondAttribute="bottom" constant="56" id="X7B-Ew-Wt5"/>
+                            <constraint firstItem="tcp-f2-0nC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="ZLT-I4-Beg"/>
+                            <constraint firstItem="x7A-1K-NSI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="bJJ-98-vNv"/>
+                            <constraint firstItem="2LE-cw-Dr9" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="cZD-J5-SbU"/>
+                            <constraint firstItem="oV9-kH-Vbo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="gef-7j-ph3"/>
+                            <constraint firstItem="x7A-1K-NSI" firstAttribute="bottom" secondItem="tcp-f2-0nC" secondAttribute="bottom" id="grK-ha-U3F"/>
+                            <constraint firstItem="2LE-cw-Dr9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ida-CA-Yh2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x7A-1K-NSI" secondAttribute="trailing" constant="180" id="kKT-Z1-SDX"/>
+                            <constraint firstItem="x7A-1K-NSI" firstAttribute="top" secondItem="tcp-f2-0nC" secondAttribute="top" id="ptO-J3-fuu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tcp-f2-0nC" secondAttribute="trailing" constant="77" id="q8c-QR-RYt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome" id="dv1-cV-Bl0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="97.767857142857139"/>
+        </scene>
+        <!--List View-->
+        <scene sceneID="zgP-qi-vEw">
+            <objects>
+                <viewController id="RPx-41-IEe" customClass="HomeViewController" customModule="Fuel_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xqB-UC-Ie0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AD3-pN-xDY">
+                                <rect key="frame" x="0.0" y="74" width="414" height="739"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="gasStationView" rowHeight="59" id="3yY-1P-tYR">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="59"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3yY-1P-tYR" id="YcP-tC-6Yh">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZ4-14-rZK">
+                                <rect key="frame" x="140" y="41" width="134" height="25"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Fuel Finder">
+                                        <attributes>
+                                            <color key="NSColor" red="0.13725490870000001" green="0.15686275059999999" blue="0.18823529780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="18" name="AvenirNext-DemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cKL-Ty-OVF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AD3-pN-xDY" firstAttribute="trailing" secondItem="cKL-Ty-OVF" secondAttribute="trailing" id="4Xh-hV-p8D"/>
+                            <constraint firstItem="KZ4-14-rZK" firstAttribute="leading" secondItem="cKL-Ty-OVF" secondAttribute="leading" constant="140" id="6C0-B4-shM"/>
+                            <constraint firstItem="AD3-pN-xDY" firstAttribute="leading" secondItem="cKL-Ty-OVF" secondAttribute="leading" id="JRd-cM-I9X"/>
+                            <constraint firstItem="AD3-pN-xDY" firstAttribute="bottom" secondItem="cKL-Ty-OVF" secondAttribute="bottom" id="RLZ-9F-OJd"/>
+                            <constraint firstItem="AD3-pN-xDY" firstAttribute="top" secondItem="KZ4-14-rZK" secondAttribute="bottom" id="SJx-Wz-yAH"/>
+                            <constraint firstItem="KZ4-14-rZK" firstAttribute="centerX" secondItem="AD3-pN-xDY" secondAttribute="centerX" id="T1S-1L-n4v"/>
+                            <constraint firstItem="KZ4-14-rZK" firstAttribute="top" secondItem="cKL-Ty-OVF" secondAttribute="top" constant="5" id="hWZ-iF-bNJ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="List View" image="list.bullet" catalog="system" id="2H7-md-SWX"/>
+                    <connections>
+                        <outlet property="fuelListView" destination="AD3-pN-xDY" id="crw-Co-s5z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JZB-RG-cUt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4302.898550724638" y="97.767857142857139"/>
+        </scene>
+        <!--Map View-->
+        <scene sceneID="8bG-I0-cEb">
+            <objects>
+                <viewController id="4wz-LO-ysp" customClass="MapViewController" customModule="Fuel_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ABi-93-RwE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="igx-Vx-5g1">
+                                <rect key="frame" x="0.0" y="69" width="414" height="744"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiK-cP-HBf">
+                                <rect key="frame" x="126" y="44" width="162" height="25"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Fuel Finder">
+                                        <attributes>
+                                            <color key="NSColor" red="0.13725490870000001" green="0.15686275059999999" blue="0.18823529780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="18" name="AvenirNext-DemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EF0-4Z-VaD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="igx-Vx-5g1" firstAttribute="top" secondItem="AiK-cP-HBf" secondAttribute="bottom" id="3sq-Dw-5MI"/>
+                            <constraint firstItem="EF0-4Z-VaD" firstAttribute="bottom" secondItem="igx-Vx-5g1" secondAttribute="bottom" id="Fce-kT-wIo"/>
+                            <constraint firstItem="AiK-cP-HBf" firstAttribute="top" secondItem="EF0-4Z-VaD" secondAttribute="top" id="GWg-dE-vk8"/>
+                            <constraint firstItem="EF0-4Z-VaD" firstAttribute="trailing" secondItem="igx-Vx-5g1" secondAttribute="trailing" id="Vl2-Ca-9Yz"/>
+                            <constraint firstItem="igx-Vx-5g1" firstAttribute="leading" secondItem="EF0-4Z-VaD" secondAttribute="leading" id="dF5-xk-jnx"/>
+                            <constraint firstItem="AiK-cP-HBf" firstAttribute="centerX" secondItem="igx-Vx-5g1" secondAttribute="centerX" id="k4Z-7B-4B7"/>
+                            <constraint firstItem="AiK-cP-HBf" firstAttribute="leading" secondItem="EF0-4Z-VaD" secondAttribute="leading" constant="126" id="svY-eZ-uxy"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map View" image="map.fill" catalog="system" id="735-qn-5xF"/>
+                    <connections>
+                        <outlet property="fuelMapView" destination="igx-Vx-5g1" id="eb3-FI-Cr3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4od-w7-kKO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3463.7681159420295" y="97.767857142857139"/>
+        </scene>
+        <!--Gas Details View Controller-->
+        <scene sceneID="QMa-Ci-tSb">
+            <objects>
+                <viewController storyboardIdentifier="gasDetailsScreen" id="G12-sl-Kad" customClass="GasDetailsViewController" customModule="Fuel_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yj4-MG-wc1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDl-vx-xHC">
+                                <rect key="frame" x="20" y="125" width="113" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="b2W-3g-rMe"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Name: ">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="AvenirNext-DemiBold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uu6-l2-9Ef">
+                                <rect key="frame" x="151" y="125" width="209" height="93"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Petro - Canada petrol station name">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="systemIndigoColor"/>
+                                            <font key="NSFont" size="18" name="AvenirNext-DemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kmb-Us-DBn">
+                                <rect key="frame" x="20" y="232" width="104" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="MYg-Em-0q1"/>
+                                    <constraint firstAttribute="height" constant="58" id="dsM-ky-tJ4"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Address: ">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="AvenirNext-DemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rg1-5t-5CX">
+                                <rect key="frame" x="151" y="230.33333333333334" width="243" height="49.333333333333343"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49.333333333333371" id="BYu-Hb-7zS"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="261 Dixon Rd, Etobicoke ON M9P 2M4, Canada">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="systemIndigoColor"/>
+                                            <font key="NSFont" size="15" name="AvenirNext-DemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vX7-eC-9ff">
+                                <rect key="frame" x="34" y="358" width="141" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="9RE-rI-QsI"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Normal Gas">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="AvenirNext-DemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JF-uj-WoM">
+                                <rect key="frame" x="241.66666666666663" y="358" width="128" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="kjt-r7-WcB"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Premium Prices">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="AvenirNext-DemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTS-Tp-S5r">
+                                <rect key="frame" x="28" y="433.66666666666669" width="138.33333333333334" height="35.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35.333333333335304" id="UFb-MW-ls8"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="192.8">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="systemIndigoColor"/>
+                                            <font key="NSFont" size="18" name="AvenirNext-DemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8df-eC-TuM">
+                                <rect key="frame" x="241.33333333333337" y="433" width="128.66666666666663" height="36.666666666666686"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="222.5">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="systemIndigoColor"/>
+                                            <font key="NSFont" size="18" name="AvenirNext-DemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMV-Qh-lmu">
+                                <rect key="frame" x="126" y="58" width="162" height="25"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Fuel Finder">
+                                        <attributes>
+                                            <color key="NSColor" red="0.13725490870000001" green="0.15686275059999999" blue="0.18823529780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="18" name="AvenirNext-DemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Gas Station Details" translatesAutoresizingMaskIntoConstraints="NO" id="qa7-M6-ocC">
+                                <rect key="frame" x="16" y="515" width="382" height="304"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jqx-RB-iUX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jqx-RB-iUX" firstAttribute="trailing" secondItem="8df-eC-TuM" secondAttribute="trailing" constant="44" id="2gg-Ax-vLr"/>
+                            <constraint firstItem="vX7-eC-9ff" firstAttribute="top" secondItem="Kmb-Us-DBn" secondAttribute="bottom" constant="68" id="6oQ-5n-DWK"/>
+                            <constraint firstItem="8JF-uj-WoM" firstAttribute="centerX" secondItem="8df-eC-TuM" secondAttribute="centerX" id="B28-Zv-Z4Q"/>
+                            <constraint firstItem="cDl-vx-xHC" firstAttribute="leading" secondItem="Yj4-MG-wc1" secondAttribute="leadingMargin" id="Bmx-71-t6M"/>
+                            <constraint firstItem="jTS-Tp-S5r" firstAttribute="leading" secondItem="jqx-RB-iUX" secondAttribute="leading" constant="28" id="Fnf-aW-b3U"/>
+                            <constraint firstItem="8df-eC-TuM" firstAttribute="top" secondItem="8JF-uj-WoM" secondAttribute="bottom" constant="32" id="GF6-jb-Rch"/>
+                            <constraint firstItem="jqx-RB-iUX" firstAttribute="trailing" secondItem="Uu6-l2-9Ef" secondAttribute="trailing" constant="54" id="IAm-We-ufJ"/>
+                            <constraint firstItem="cDl-vx-xHC" firstAttribute="top" secondItem="OMV-Qh-lmu" secondAttribute="bottom" constant="42" id="ID9-PV-8PJ"/>
+                            <constraint firstItem="Uu6-l2-9Ef" firstAttribute="leading" secondItem="cDl-vx-xHC" secondAttribute="trailing" constant="18" id="ILJ-s1-QBx"/>
+                            <constraint firstItem="jqx-RB-iUX" firstAttribute="trailing" secondItem="8JF-uj-WoM" secondAttribute="trailing" constant="44.333333333333485" id="JLe-c2-Jlj"/>
+                            <constraint firstItem="Rg1-5t-5CX" firstAttribute="leading" secondItem="Kmb-Us-DBn" secondAttribute="trailing" constant="27" id="Kfy-h2-GsM"/>
+                            <constraint firstItem="8JF-uj-WoM" firstAttribute="leading" secondItem="vX7-eC-9ff" secondAttribute="trailing" constant="66.666666666666515" id="NtY-Wm-qfh"/>
+                            <constraint firstItem="OMV-Qh-lmu" firstAttribute="top" secondItem="jqx-RB-iUX" secondAttribute="top" constant="14" id="SGb-ee-pri"/>
+                            <constraint firstItem="vX7-eC-9ff" firstAttribute="top" secondItem="Rg1-5t-5CX" secondAttribute="bottom" constant="78.333333333333258" id="SMO-zG-R79"/>
+                            <constraint firstItem="Uu6-l2-9Ef" firstAttribute="leading" secondItem="Rg1-5t-5CX" secondAttribute="leading" id="URF-wJ-c2k"/>
+                            <constraint firstItem="8df-eC-TuM" firstAttribute="leading" secondItem="jTS-Tp-S5r" secondAttribute="trailing" constant="75" id="UUv-w5-RVx"/>
+                            <constraint firstItem="jqx-RB-iUX" firstAttribute="trailing" secondItem="OMV-Qh-lmu" secondAttribute="trailing" constant="126" id="VBX-8f-FwT"/>
+                            <constraint firstItem="OMV-Qh-lmu" firstAttribute="leading" secondItem="jqx-RB-iUX" secondAttribute="leading" constant="126" id="VR0-XA-NfR"/>
+                            <constraint firstItem="vX7-eC-9ff" firstAttribute="leading" secondItem="jqx-RB-iUX" secondAttribute="leading" constant="34" id="VrJ-7T-lub"/>
+                            <constraint firstItem="jqx-RB-iUX" firstAttribute="bottom" secondItem="qa7-M6-ocC" secondAttribute="bottom" constant="43" id="Vvf-Kc-fmQ"/>
+                            <constraint firstItem="Kmb-Us-DBn" firstAttribute="top" secondItem="cDl-vx-xHC" secondAttribute="bottom" constant="30" id="aBO-fs-cMN"/>
+                            <constraint firstItem="Rg1-5t-5CX" firstAttribute="trailing" secondItem="Yj4-MG-wc1" secondAttribute="trailingMargin" id="eB7-YX-A5M"/>
+                            <constraint firstItem="qa7-M6-ocC" firstAttribute="top" secondItem="jTS-Tp-S5r" secondAttribute="bottom" constant="45.999999999997954" id="fjH-Sg-Td9"/>
+                            <constraint firstItem="cDl-vx-xHC" firstAttribute="firstBaseline" secondItem="Uu6-l2-9Ef" secondAttribute="firstBaseline" id="gfX-ja-EAe"/>
+                            <constraint firstItem="qa7-M6-ocC" firstAttribute="centerX" secondItem="OMV-Qh-lmu" secondAttribute="centerX" id="jWY-47-E64"/>
+                            <constraint firstItem="jTS-Tp-S5r" firstAttribute="top" secondItem="vX7-eC-9ff" secondAttribute="bottom" constant="32.666666666666742" id="jen-Z3-Ihm"/>
+                            <constraint firstItem="jTS-Tp-S5r" firstAttribute="centerY" secondItem="8df-eC-TuM" secondAttribute="centerY" id="ltt-EY-fkr"/>
+                            <constraint firstItem="jqx-RB-iUX" firstAttribute="bottom" secondItem="OMV-Qh-lmu" secondAttribute="bottom" constant="779" id="oya-AO-4Dz"/>
+                            <constraint firstItem="qa7-M6-ocC" firstAttribute="leading" secondItem="jqx-RB-iUX" secondAttribute="leading" constant="16" id="pxp-Br-Ztg"/>
+                            <constraint firstItem="vX7-eC-9ff" firstAttribute="baseline" secondItem="8JF-uj-WoM" secondAttribute="baseline" id="tdw-Jy-JMR"/>
+                            <constraint firstItem="Rg1-5t-5CX" firstAttribute="top" secondItem="Uu6-l2-9Ef" secondAttribute="bottom" constant="12.333333333333371" id="tjZ-Uo-CLp"/>
+                            <constraint firstItem="cDl-vx-xHC" firstAttribute="leading" secondItem="Kmb-Us-DBn" secondAttribute="leading" id="ul2-cf-GDl"/>
+                            <constraint firstItem="vX7-eC-9ff" firstAttribute="firstBaseline" secondItem="8JF-uj-WoM" secondAttribute="firstBaseline" id="viO-v4-Ihm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fuelLocationAddress" destination="Rg1-5t-5CX" id="7rK-nI-Y08"/>
+                        <outlet property="fuelLocationName" destination="Uu6-l2-9Ef" id="D0f-Ua-5Bw"/>
+                        <outlet property="fuelLocationNormalPrice" destination="jTS-Tp-S5r" id="HCa-cb-P1Z"/>
+                        <outlet property="fuelLocationPremiumPrice" destination="8df-eC-TuM" id="OrK-Gz-bMI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xjq-wZ-dCz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5095.652173913044" y="97.767857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Gdx-lW-g1C">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sGq-VO-mcC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7l3-rD-nUw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0iI-tz-SgC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fcN-PZ-wQZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49" y="98"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="l8F-Aw-NsD">
+            <objects>
+                <tabBarController storyboardIdentifier="tabViewScreen" automaticallyAdjustsScrollViewInsets="NO" id="lpJ-OO-GQt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rDr-2X-ahu">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="4wz-LO-ysp" kind="relationship" relationship="viewControllers" id="fpI-Eu-C3V"/>
+                        <segue destination="RPx-41-IEe" kind="relationship" relationship="viewControllers" id="xIl-TT-CXt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dsm-9k-rrE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2398.5507246376815" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <resources>
+        <image name="Gas Station Details" width="927" height="791"/>
+        <image name="Get_Started" width="1126" height="652"/>
+        <image name="list.bullet" catalog="system" width="128" height="87"/>
+        <image name="map.fill" catalog="system" width="128" height="110"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
